@@ -1,0 +1,52 @@
+/* Stile generale del form */
+#form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    margin-top: 80px;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Stile del titolo */
+#form h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Stile delle label */
+#form label {
+    color: #333;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Stile degli input */
+#form input[type="text"],
+#form input[type="password"],
+#form input[type="submit"] {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
+}
+
+#form input[type="submit"] {
+    background-color: #5B97B7;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#form input[type="submit"]:hover {
+    background-color: #134967;
+}

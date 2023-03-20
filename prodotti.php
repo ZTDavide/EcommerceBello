@@ -134,11 +134,12 @@
     echo "<tr><th></th><th>Prodotto</th><th>Prezzo</th><th>Quantità</th><th>Aggiungi</th></tr>";
 
     while ($row = mysqli_fetch_assoc($result)) {
-
-      $img = "images" . "/" . $row["nome"] . ".png";
+      
+      //var_dump($row["nome"]) . "</br>";
+      $img = "images/". str_replace(' ', '%20', $row["nome"]) . ".png";
 
       echo "<tr>";
-      echo " <td> <img src= $img width='60' height='60'> </td>";
+      echo " <td> <img src= $img width='80' height='80'> </td>";
       echo "<td>" . $row["nome"] . "</td>";
       echo "<td>" . '€' . $row["prezzo"] . "</td>";
       echo "<td><input type='number' min='0' max='10' value='0' id='" . $row["nome"] . "_qt'></td>";
